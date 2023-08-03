@@ -35,3 +35,13 @@ git commit -m "Thêm chức năng xử lý đăng nhập"
 
 git push <remote> <branch>
 
+# Tạo SSH Key
+
+ssh-keygen -t rsa -b 4096 -C "địa chỉ email"
+
+# Xem nơi lưu SSH Key
+
+ls ~/.ssh
+
+
+
