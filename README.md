@@ -41,13 +41,20 @@ git config --global user.name "Tên người dùng"
 git config --global user.email "địa chỉ email"
 ## Tạo SSH Key
 ssh-keygen -t rsa -b 4096 -C "địa chỉ email"
+Trong đó:
+    -t: Loại khoá. Ở đây là rsa
+    -b: Độ dài chuỗi khoá rsa. Ở đây là 4096
+    -C: Bình luận hay ghi chú. Không ảnh hưởng tới Khoá
+
 ## Lưu SHH key vào phần Github 
 
 Setting->SSH and GPG key->New Key
 
-# Xem nơi danh sách SSH Key
-
-ls ~/.ssh
+# Nơi danh sách SSH Key
+## Mac
+~/.ssh
+## Window
+C:\Users\<username>\.ssh\
 
 
 
