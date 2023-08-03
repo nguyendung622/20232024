@@ -35,11 +35,17 @@ git commit -m "Thêm chức năng xử lý đăng nhập"
 
 git push <remote> <branch>
 
-# Tạo SSH Key
-
+# Xác thực tài khoản để có thể đẩy dữ liệu lên Server
+## Cấu hình tài khoản
+git config --global user.name "Tên người dùng"
+git config --global user.email "địa chỉ email"
+## Tạo SSH Key
 ssh-keygen -t rsa -b 4096 -C "địa chỉ email"
+## Lưu SHH key vào phần Github 
 
-# Xem nơi lưu SSH Key
+Setting->SSH and GPG key->New Key
+
+# Xem nơi danh sách SSH Key
 
 ls ~/.ssh
 
